@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+#cat-list {
+    margin: 0 auto;
+    padding: 3rem;
+    background:rgba(255,255,255,0.5);
+    font-family: 'Quicksand', sans-serif;
+    height: auto;
+
+    .wrapper-title {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+        }
+    }
+
+
+
+    .wrapper-card-cats {
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 2rem auto;
+        background:#e7e7e7;
+        border-radius: 13px;
+        box-sizing: content-box;
+
+        @media(max-width:768px) {
+            flex-direction: column;
+        }
+    
+        .wrapper-img {
+            width: 40%;
+            margin-right: 2rem;
+
+            @media(max-width:768px) {
+                width: 90%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+    
+            img {
+                width:100%;
+                max-width: 400px;
+                height: auto;
+            }
+        }
+    
+        .wrapper-info {
+            width:60%;
+            background:white;
+            padding: 1rem;
+            border-radius: 10px;
+
+            @media(max-width:768px) {
+                width:90%;
+                margin:auto;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                vertical-align: center;
+
+                span {
+                    font-weight: 600;
+                    color:rgb(5, 148, 136);
+                }
+
+                .char {
+                    display: inline-block;
+                    vertical-align: center;
+                    width: 30%;
+                    
+                    @media(max-width:768px) {
+                        display: block;
+                    }
+                }
+
+                .bar {
+                    height: 20px;
+                    margin-left: 1rem;
+                    vertical-align: top;
+                    border-radius: 10px;
+                    display: inline-block;
+                    position: relative;
+
+                    @media(max-width:768px) {
+                        margin-left: unset;
+                        display: block;
+                        margin-top:1rem;
+                    }
+
+                   }
+                
+                ._5 {
+                    background-color: #7fbb70;
+                    width: 200px;
+                    &:after {
+                        content: "5";
+                        position: absolute;
+                        right: -30px;
+                        color:#7fbb70;
+                        font-weight: bold;
+                    }
+                }
+
+                ._4 {
+                    background-color: #9ec195;
+                    width: 150px;
+                    &:after {
+                        content: "4";
+                        position: absolute;
+                        right: -30px;
+                        color:#9ec195;
+                        font-weight: bold;
+                    }
+                }
+
+                ._3 {
+                    background-color: #dcbf55;
+                    width: 100px;
+                    &:after {
+                        content: "3";
+                        position: absolute;
+                        right: -30px;
+                        color:#dcbf55;
+                        font-weight: bold;
+                    }
+                }
+
+                ._2 {
+                    background-color: #e4865a;
+                    width: 50px;
+                    &:after {
+                        content: "2";
+                        position: absolute;
+                        right: -30px;
+                        color:#e4865a;
+                        font-weight: bold;
+                    }
+                }
+
+                
+                ._1 {
+                    background-color: #f95d5d;
+                    width: 25px;
+                    &:after {
+                        content: "1";
+                        position: absolute;
+                        right: -30px;
+                        color:#f95d5d;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .bar {
+                display: block;
+            }
+
+        }
+    }
+
+    .wrapper-error {
+        padding: 3rem;
+        max-width: 600px;
+        text-align: center;
+        margin:0 auto;
+        background:white;
+
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
