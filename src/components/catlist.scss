@@ -7,14 +7,26 @@
     font-family: 'Quicksand', sans-serif;
     height: auto;
 
+    @media(max-width:375px) {
+        padding: 1rem;
+    }
+
     .wrapper-title {
         display: flex;
         justify-content: center;
+
+        @media(max-width:375px) {
+            flex-direction: column;
+        }
 
         img {
             max-width: 200px;
             width: 100%;
             height: auto;
+
+            @media(max-width:375px) {
+                margin:0 auto;
+            }
         }
 
         h1 {
@@ -26,7 +38,7 @@
 
     .wrapper-card-cats {
         display: flex;
-        padding: 2rem;
+        padding: 1rem;
         justify-content: center;
         max-width: 1000px;
         margin: 2rem auto;
