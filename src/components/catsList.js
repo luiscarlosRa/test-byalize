@@ -23,7 +23,7 @@ const CatsList = () => {
     return (
         <section id="cat-list">
             <div className="wrapper-title">
-                <img src={cat}/>
+                <img src={cat} alt="logo cat"/>
                 <h1>Cat breeds</h1>
             </div>
             {cats.length > 0 ? cats.map((cat, i) => {
@@ -42,7 +42,7 @@ const CatsList = () => {
                         <p><span className="char">Child friendly: </span><span className={`bar _${cat.child_friendly}`}></span></p>
                     </div>
                 </div>)
-            }): <div className="wrapper-error"><p>Cat list breed is not available. Try again later</p><img src="https://media.giphy.com/media/H2GT0TQBAlbuo/giphy.gif"/></div>}
+            }): <div className="wrapper-error"><p>Cat list breed is not available. Try again later</p><img src="https://media.giphy.com/media/H2GT0TQBAlbuo/giphy.gif" alt="Error Cat"/></div>}
         </section>
     );
 }
